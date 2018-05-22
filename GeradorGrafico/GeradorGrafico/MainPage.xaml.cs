@@ -33,6 +33,7 @@ namespace GeradorGrafico
         void button1_Click(object sender, RoutedEventArgs e)
         {
             Model.InitChart();
+            Model.MyModel.InvalidatePlot(true);
         }
     }
 }
