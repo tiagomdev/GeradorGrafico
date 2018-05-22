@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="GeradorGrafico.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:oxy="using:OxyPlot.Windows"
+    xmlns:local="using:GeradorGrafico"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:ConnectionId='1' x:Name="button" Content="Iniciar" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="75"                      />
+        <Grid HorizontalAlignment="Left" Height="255" Margin="20,47,0,0" VerticalAlignment="Top" Width="477">
+            <oxy:PlotView Model="{Binding MyModel}"/>
+        </Grid>
+    </Grid>
+</Page>
+

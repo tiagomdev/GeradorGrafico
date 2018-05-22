@@ -1,0 +1,1 @@
+C:\Users\Tiago Miranda\source\repos\GeradorGrafico\GeradorGrafico\GeradorGrafico.csproj;x86
