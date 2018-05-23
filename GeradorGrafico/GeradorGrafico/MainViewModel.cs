@@ -28,7 +28,8 @@ namespace GeradorGrafico
             };
             MyModel.Series.Add(Lines);
         }
-        public ICommand InitChartCommand { get; set; }
+
+        DispatcherTimer sensorCollection;
         public PlotModel MyModel { get;set; }
         public int x = 1;
         public int y = 5;
@@ -36,13 +37,32 @@ namespace GeradorGrafico
         public LineSeries Lines { get; set; }
         public void InitChart()
         {
-            Task.Delay(TimeSpan.FromSeconds(5)).Wait();
+            //Task.Delay(TimeSpan.FromSeconds(5)).Wait();
             x += 5;
             y += 5;
             Lines.Points.Add(new DataPoint(x, y));
             MyModel.Series[0] = Lines;
+            MyModel.InvalidatePlot(true);
         }
 
-        
+        private void sensorCollection_Tick(object sender, object e)
+        {
+            InitChart();
+        }
+
+        public void Init()
+        {
+            sensorCollection = new DispatcherTimer();
+            sensorCollection.Interval = TimeSpan.FromSeconds(5);
+            sensorCollection.Tick += this.sensorCollection_Tick;
+            sensorCollection.Start();
+        }
+
+        public void Stop()
+        {
+            sensorCollection.Stop();
+        }
+
+
     }
 }

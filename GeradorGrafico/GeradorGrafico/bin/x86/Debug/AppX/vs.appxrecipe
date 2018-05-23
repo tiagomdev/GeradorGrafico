@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Tiago Miranda\source\repos\GeradorGrafico\GeradorGrafico\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-22T21:17:02.318</Modified>
+      <Modified>2018-05-22T23:30:24.148</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Tiago Miranda\source\repos\GeradorGrafico\GeradorGrafico\bin\x86\Debug\GeradorGrafico.exe">
       <PackagePath>entrypoint\GeradorGrafico.exe</PackagePath>
-      <Modified>2018-05-22T21:17:01.736</Modified>
+      <Modified>2018-05-22T23:30:23.878</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Tiago Miranda\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -564,7 +564,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Tiago Miranda\source\repos\GeradorGrafico\GeradorGrafico\bin\x86\Debug\Core\GeradorGrafico.exe">
       <PackagePath>GeradorGrafico.exe</PackagePath>
-      <Modified>2018-05-22T21:17:02.314</Modified>
+      <Modified>2018-05-22T23:30:24.144</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
