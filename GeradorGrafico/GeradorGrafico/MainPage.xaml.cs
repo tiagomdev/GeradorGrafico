@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -26,13 +27,36 @@ namespace GeradorGrafico
         {
             this.InitializeComponent();
             this.DataContext = Model = new MainViewModel();
+
         }
 
         MainViewModel Model { get; set; }
 
+        bool stop = false;
         void button1_Click(object sender, RoutedEventArgs e)
         {
-            Model.Test();
+            if(Secunde.SelectedIndex == -1)
+            {
+                var msg = new MessageDialog("Preencha o intervalo em segundos para iniciar o gráfico");
+                msg.ShowAsync();
+            }
+            else
+            {
+                var secunde = (int)Secunde.Items[Secunde.SelectedIndex];
+
+                if (!stop)
+                {
+                    stop = true;
+                    button.Content = "Parar";
+                    Model.Init(secunde);
+                }
+                else
+                {
+                    Model.Stop();
+                    stop = false;
+                    button.Content = "Iniciar";
+                }
+            }
         }
     }
 }

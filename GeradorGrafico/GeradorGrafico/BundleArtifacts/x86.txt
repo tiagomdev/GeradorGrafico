@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Tiago Miranda\source\repos\GeradorGrafico\GeradorGrafico\bin\x86\Debug\GeradorGrafico_1.0.0.0_x86_Debug.appx
+SymbolPackage=C:\Users\Tiago Miranda\source\repos\GeradorGrafico\GeradorGrafico\AppPackages\GeradorGrafico_1.0.0.0_Debug_Test\GeradorGrafico_1.0.0.0_x86_Debug.appxsym
