@@ -216,3 +216,4 @@ C:\Users\Tiago Miranda\source\repos\GeradorGrafico\GeradorGrafico\bin\x86\Debug\
 C:\Users\Tiago Miranda\source\repos\GeradorGrafico\GeradorGrafico\bin\x86\Debug\OxyPlot.Windows.dll
 C:\Users\Tiago Miranda\source\repos\GeradorGrafico\GeradorGrafico\bin\x86\Debug\OxyPlot.Windows.pdb
 C:\Users\Tiago Miranda\source\repos\GeradorGrafico\GeradorGrafico\obj\x86\Debug\OxyPlot.Windows.pri.xml
+C:\Users\Tiago Miranda\source\repos\GeradorGrafico\GeradorGrafico\bin\x86\Debug\Core\ForBundle\AppxManifest.xml

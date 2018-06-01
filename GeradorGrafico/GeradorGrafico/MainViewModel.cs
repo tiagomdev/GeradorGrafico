@@ -36,7 +36,6 @@ namespace GeradorGrafico
         public PlotModel MyModel { get;set; }
         int x = 0;
         int y = 0;
-        int secundes;
         public List<DataPoint> Points = new List<DataPoint>();
         public LineSeries Lines { get; set; }
         public void InitChart()
@@ -57,9 +56,8 @@ namespace GeradorGrafico
 
         public void Init(int secundes)
         {
-            this.secundes = secundes;
             sensorCollection = new DispatcherTimer();
-            sensorCollection.Interval = TimeSpan.FromSeconds(2);
+            sensorCollection.Interval = TimeSpan.FromSeconds(secundes);
             sensorCollection.Tick += sensorCollection_Tick;
             sensorCollection.Start();
         }
